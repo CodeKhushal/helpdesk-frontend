@@ -1,0 +1,58 @@
+.edit-account-form {
+  margin: 10px auto;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.edit-header {
+  background-color: #4adac9;
+  color: black;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.label {
+  background-color: #999;
+  color: white;
+  padding: 10px;
+  width: 40%;
+  font-size: 14px;
+  margin: 10px 0px;
+  font-weight: 600;
+}
+
+td{
+    padding: 0;
+}
+
+td input {
+  width: 98%;;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.submit-cell {
+  background-color: #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.submit-btn {
+  background-color: #4adac9;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-left: 0;
+  cursor: pointer;
+}

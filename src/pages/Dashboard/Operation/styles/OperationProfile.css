@@ -1,0 +1,103 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  background-color: #a7ede3;
+  min-height: 75%;
+}
+
+.profile-card,
+.feedback-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  padding-top: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  position: relative;
+}
+
+.profile-icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 16px;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.facircle{
+    margin-top: 20px;
+}
+
+.top-right-icon img{
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  width: 20px;
+}
+
+.profile-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-container .feedback-card{
+    background-color: white;
+    margin: 0 20px;
+    width: 80%;
+    height: fit-content;
+    padding-bottom: 15px;
+    border-radius: 18px;
+}
+
+.profile-container .feedback-card h4 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.profile-container .feedback-card textarea {
+  width: 80%;
+  height: 40px;
+  resize: none;
+  font-size: 12px;
+  padding: 6px;
+  background-color: #e4e4e4;
+  border: none;
+}
+
+.stars {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.stars span {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.stars span.filled {
+  color: #f7b500;
+}
+
+.profile-container .feedback-card .submit-btn {
+  background: #4adac9;
+  color: black;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.profile-container .feedback-card .submit-btn:hover {
+  background: #3a9f9c;
+}

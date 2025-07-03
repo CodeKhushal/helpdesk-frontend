@@ -14,11 +14,13 @@ import UserNewTicket from "./pages/Dashboard/User/UserNewTicket";
 import UserMyTickets from "./pages/Dashboard/User/UserMyTickets";
 import UserProfile from "./pages/Dashboard/User/UserProfile.jsx";
 import UserProfileEdit from "./pages/Dashboard/User/UserProfileEdit.jsx";
+
 import OperationDashboard from "./pages/Dashboard/Operation/OperationDashboard";
 import OperationMyTickets from "./pages/Dashboard/Operation/OperationMyTickets";
 import OperationPerformance from "./pages/Dashboard/Operation/OperationPerformance.jsx";
 import OperationProfile from "./pages/Dashboard/Operation/OperationProfile.jsx";
 import OperationTicketApproval from "./pages/Dashboard/Operation/OperationTicketApproval.jsx";
+import OperationProfileEdit from "./pages/Dashboard/Operation/OperationProfileEdit.jsx";
 // import TechDashboard from "./pages/Dashboard/Tech/TechDashboard";
 // import AdminDashboard from "./pages/Dashboard/Admin/AdminDashboard";
 
@@ -68,7 +70,7 @@ function App() {
               <Route path="opsteam-profile" element={<OperationProfile/>} />
               <Route path="performance" element={<OperationPerformance/>} />
               <Route path="ticket-approval" element={<OperationTicketApproval/>} />
-              {/* <Route path="Operation-profile-edit" element={<OperationProfileEdit/>} /> */}
+              <Route path="operation-profile-edit" element={<OperationProfileEdit/>} />
             </>
           )}
         </Route>
