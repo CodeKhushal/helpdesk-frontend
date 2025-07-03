@@ -1,0 +1,16 @@
+div .feedback-card {
+  background-color: #55D6C2;
+  padding: 1px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  height: 24%;
+  margin-top: 8px;
+}
+
+.feedback-card .stars span{
+  font-size: 1.5rem;
+  color: lightgoldenrodyellow;
+}
+
+

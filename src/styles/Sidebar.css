@@ -1,0 +1,41 @@
+.sidebar {
+  width: 18%;
+  background-color: #D2D1D1;
+  padding: 20px;
+  height: calc(100vh - 70px);
+  box-sizing: border-box;
+  position: absolute;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 5px;
+}
+
+.menu-item:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.menu-item .arrow {
+  color: black;
+  font-size: 1.2rem;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 25px;
+  margin-right: 8px;
+}

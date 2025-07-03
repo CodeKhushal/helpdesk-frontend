@@ -1,0 +1,290 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App container with gradient background */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Auth container */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Auth form styling */
+.auth-form {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 48px 40px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title styling */
+.auth-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2D3748;
+  text-align: center;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+/* Subtitle styling */
+.auth-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4A5568;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Input group styling */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #374151;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #9CA3AF;
+  font-weight: 400;
+}
+
+.input-field:focus {
+  border-color: #4ECDC4;
+  box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.1);
+  transform: translateY(-1px);
+}
+
+.input-field:hover:not(:focus) {
+  border-color: #9CA3AF;
+}
+
+/* Sign in button styling */
+.signin-button {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #00C851 0%, #00A142 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  margin-top: 8px;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.signin-button:hover {
+  background: linear-gradient(135deg, #00A142 0%, #008A36 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 200, 81, 0.3);
+}
+
+.signin-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 200, 81, 0.2);
+}
+
+/* Sign up button styling */
+.signup-button {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #4285F4 0%, #3367D6 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  margin-top: 8px;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.signup-button:hover {
+  background: linear-gradient(135deg, #3367D6 0%, #2B5CE6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(66, 133, 244, 0.3);
+}
+
+.signup-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.2);
+}
+
+/* Form links container */
+.form-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Link buttons base styling */
+.forgot-password-link,
+.signup-link,
+.signin-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Forgot password link styling */
+.forgot-password-link {
+  color: #FF4444;
+}
+
+.forgot-password-link:hover {
+  color: #FF2222;
+  background-color: rgba(255, 68, 68, 0.1);
+}
+
+/* Sign up link styling */
+.signup-link {
+  color: #4A5568;
+}
+
+.signup-link:hover {
+  color: #2D3748;
+  background-color: rgba(74, 85, 104, 0.1);
+}
+
+/* Sign in link styling */
+.signin-link {
+  color: #4A5568;
+}
+
+.signin-link:hover {
+  color: #2D3748;
+  background-color: rgba(74, 85, 104, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 16px;
+  }
+  
+  .auth-form {
+    padding: 32px 24px;
+    border-radius: 12px;
+  }
+  
+  .auth-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .auth-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .input-field {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+  
+  .signin-button,
+  .signup-button {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  
+  .form-links {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 24px 20px;
+  }
+  
+  .auth-title {
+    font-size: 22px;
+  }
+
+  .auth-subtitle {
+    font-size: 14px;
+  }
+}
+
+/* Focus and accessibility improvements */
+.signin-button:focus-visible,
+.signup-button:focus-visible,
+.forgot-password-link:focus-visible,
+.signup-link:focus-visible,
+.signin-link:focus-visible {
+  outline: 2px solid #4ECDC4;
+  outline-offset: 2px;
+}
+
+/* Loading state for buttons (optional enhancement) */
+.signin-button:disabled,
+.signup-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.signin-button:disabled:hover,
+.signup-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}

@@ -1,0 +1,31 @@
+.status-card {
+  width: 20%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(1, 1, 66);
+  font-family: Arial, Helvetica, 'Segoe UI', sans-serif;
+  margin: 2px;
+  text-align: center;
+}
+
+.card-title {
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 10px;
+  margin-bottom: 2px;
+  height: 50%;
+  color: black;
+}
+
+.card-count {
+  margin: 0px 30px 20px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: 60%;
+}

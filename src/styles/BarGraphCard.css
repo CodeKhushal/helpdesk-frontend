@@ -1,0 +1,18 @@
+.bargraph-card {
+  width: 50%;
+  height: 100%;
+  background-color: #55D6C2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bargraph-card img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.bar-icon {
+  color: #003366;
+}
