@@ -1,10 +1,10 @@
 import '../../styles/BarGraphCard.css';
-import vector from '../../assets/vector.png';
+import graph from '../../assets/Graph.png';
 
 function BarGraphCard() {
   return (
     <div className="bargraph-card">
-      <img src={vector} alt="bargraph" />
+      <img src={graph} alt="bargraph" />
     </div>
   );
 }
